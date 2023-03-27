@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 500vh;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  transform: translateY(0);
+  height: var(--headerSpaceTop, 8.0625rem);
+  background-color: #fecc00;
+  transition: 90ms ease-in;
+}
+header .main {
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: 0 10px;
+}
+header .main .first-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+header .main .first-line img {
+  height: 35.203px;
+  width: 162px;
+}
+header .main .first-line form {
+  display: flex;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  overflow: hidden;
+  width: 400px;
+  height: 34px;
+  margin-bottom: 5px;
+  margin-right: 100px;
+}
+header .main .first-line form input[type=search] {
+  border: none;
+  width: 362px;
+  height: 34px;
+  padding: 0 14px;
+  font-size: 12px;
+  outline: none;
+}
+header .main .first-line form input::placeholder {
+  color: #757575;
+}
+header .main .first-line form button {
+  border: none;
+  height: 32px;
+  width: 36px;
+  padding: 0 10px;
+  margin: 0;
+  display: block;
+  background-color: white;
+}
+header .main .first-line form button i {
+  font-size: 12px;
+}
+header .main .first-line form button:hover {
+  background-color: #ececec;
+}
+header .main .first-line .list {
+  display: flex;
+  font-family: arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+header .main .first-line .list span {
+  color: #757575;
+}
+header .main .first-line .list ul {
+  display: flex;
+  font-family: arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+header .main .first-line .list ul a {
+  color: #757575;
+  padding-left: 3px;
+}
+header .main .first-line .list ul a:hover {
+  color: #333;
+}
+header .main .first-line .btn-rate {
+  width: 165px;
+  height: 30px;
+  align-self: center;
+  border: none;
+  background-color: black;
+  padding: 0 10px;
+}
+header .main .first-line .btn-rate i {
+  font-size: 14px;
+  color: white;
+  margin-right: 5px;
+}
+header .main .first-line .btn-rate span {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fdfffa;
+  font-family: "montserrat";
+}
+header .main .sec-line {
+  display: flex;
+  justify-content: space-between;
+}
+header .main .sec-line nav {
+  margin-top: 10px;
+  height: 26.5px;
+}
+header .main .sec-line nav ul {
+  display: flex;
+  margin: 0 auto;
+}
+header .main .sec-line nav ul a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #333;
+  font-family: "montserrat", Arial, Sans-Serif;
+  font-weight: 500;
+  padding: 8px 15px;
+}
+header .main .sec-line nav ul a:hover {
+  background: hsla(0, 0%, 100%, 0.4);
+}
+
+/*# sourceMappingURL=style.css.map */
