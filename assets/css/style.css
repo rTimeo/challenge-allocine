@@ -15,8 +15,8 @@ header {
   right: 0;
   left: 0;
   transform: translateY(0);
-  height: var(--headerSpaceTop, 8.0625rem);
-  background-color: #fecc00;
+  height: var(--headerSpaceTop, 7.025rem);
+  background-color: #b2a987;
   transition: 90ms ease-in;
 }
 header .main {
@@ -112,6 +112,7 @@ header .main .first-line .btn-rate span {
   font-family: "montserrat";
 }
 header .main .sec-line {
+  background-color: burlywood;
   display: flex;
   justify-content: space-between;
 }
