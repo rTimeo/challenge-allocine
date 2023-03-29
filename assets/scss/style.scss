@@ -8,6 +8,7 @@
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-size: 10px;
 }
 
 body{
@@ -19,26 +20,31 @@ header{
     right: 0;
     left: 0;   
     transform: translateY(0);
-    height: var(--headerSpaceTop,7.025rem);
+  
     background-color: #b2a987;
     transition:  90ms ease-in;
 
     .main{
+        background-color: red;
         margin: 0 auto;
-        max-width: 1060px;
+        max-width: 1300px;
         padding: 0 10px;
 
         .first-line{
+            background-color: grey;
             display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
+        
+
+           
 
             img{
-                height: 35.203px;
-                width: 162px;            
+                width: 210px; 
+                width: 61.25;
+                margin-right: 100px;           
             }
 
             form{
+                margin-top: 15px;
                 display: flex;
 
                 background-color: white;
@@ -46,17 +52,18 @@ header{
                 border: 1px solid rgb(255, 255, 255);
                 overflow: hidden;
             
-                width: 400px;
-                height: 34px;
+                width: 510px;
+                height: 45px;
                 margin-bottom: 5px;
                 margin-right: 100px;
+                position: relative;
 
                 input[type="search"]{
                     border: none;
                     width: 362px;
-                    height: 34px;
+                    height: 100%;
                     padding: 0 14px;
-                    font-size: 12px;
+                    font-size: 1.5rem;
                     outline: none;
                 }
 
@@ -65,16 +72,20 @@ header{
                 }
 
                 button{
+                    background-color: red;
                     border: none;
-                    height: 32px;
+                    height: 100%;
                     width: 36px;
                     padding: 0 10px;
                     margin: 0;
-                    display: block;
+
                     background-color: white;
+                    position: absolute;
+                    right: 0;
 
                     i{
-                        font-size: 12px;
+                        font-size: 1.5rem;
+                        
                     }
                 }
 
@@ -136,25 +147,26 @@ header{
             }   
         }
         .sec-line{
-            background-color: burlywood;
+            background-color: rgba(255, 255, 255, 0.5);
             display: flex;
             justify-content: space-between;
 
             nav{
-                margin-top: 10px;
-                height: 26.5px;
+                padding: 12px 0;
+                
 
                 ul{
                     display: flex;
-                    margin: 0 auto;
+                    
 
                     a{
-                        font-size: 15px;
+                        font-size: 1.8rem;
                         text-transform: uppercase;
                         color: #333;
                         font-family: 'montserrat',Arial,Sans-Serif;
-                        font-weight: 500;
-                        padding:8px 15px;
+                        font-weight: 600;
+                        padding: 12px 20px;
+                        
                     }
 
                     a:hover{
