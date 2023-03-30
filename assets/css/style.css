@@ -16,23 +16,24 @@ header {
   right: 0;
   left: 0;
   transform: translateY(0);
-  background-color: #b2a987;
+  background-color: #FECC00;
   transition: 90ms ease-in;
 }
 header .main {
-  background-color: red;
+  background-color: #FECC00;
   margin: 0 auto;
   max-width: 1300px;
   padding: 0 10px;
 }
 header .main .first-line {
-  background-color: grey;
   display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
 header .main .first-line img {
   width: 210px;
   width: 61.25;
-  margin-right: 100px;
+  margin-right: -160px;
 }
 header .main .first-line form {
   margin-top: 15px;
@@ -43,7 +44,6 @@ header .main .first-line form {
   width: 510px;
   height: 45px;
   margin-bottom: 5px;
-  margin-right: 100px;
   position: relative;
 }
 header .main .first-line form input[type=search] {
@@ -61,8 +61,7 @@ header .main .first-line form button {
   background-color: red;
   border: none;
   height: 100%;
-  width: 36px;
-  padding: 0 10px;
+  width: 45px;
   margin: 0;
   background-color: white;
   position: absolute;
@@ -117,9 +116,9 @@ header .main .first-line .btn-rate span {
   font-family: "montserrat";
 }
 header .main .sec-line {
-  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 header .main .sec-line nav {
   padding: 12px 0;
@@ -137,6 +136,87 @@ header .main .sec-line nav ul a {
 }
 header .main .sec-line nav ul a:hover {
   background: hsla(0, 0%, 100%, 0.4);
+}
+header .main .sec-line .test .my-account {
+  height: 100%;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  background-color: #1CA2EB;
+  border: none;
+  font-family: "montserrat";
+}
+header .main .sec-line .test .my-account i {
+  font-size: 2rem;
+  color: white;
+}
+header .main .sec-line .test .my-account-hover {
+  display: none;
+  border: 0.1px solid rgb(198, 198, 198);
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+}
+header .main .sec-line .test .my-account-hover i {
+  color: white;
+  font-size: 4.2rem;
+  position: absolute;
+  right: 15px;
+  top: -20px;
+}
+header .main .sec-line .test .my-account-hover button {
+  background-color: rgb(152, 89, 89);
+  font-size: 1.4rem;
+  display: block;
+  padding: 15px 20px;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  font-family: "montserrat";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header .main .sec-line .test button:nth-child(2) {
+  margin-bottom: 20px;
+  border: 1px solid #1CA2EB;
+  background-color: white;
+  color: #1CA2EB;
+}
+header .main .sec-line .test button:nth-child(3) {
+  color: white;
+  background-color: #1CA2EB;
+}
+header .main .sec-line .test:hover .my-account-hover {
+  display: block;
+}
+header .third-line {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+header .third-line p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "montserrat";
+  margin-right: 90px;
+}
+
+main {
+  padding-top: 150px;
+  background-color: #f2f2f2;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

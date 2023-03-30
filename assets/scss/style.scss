@@ -21,18 +21,20 @@ header{
     left: 0;   
     transform: translateY(0);
   
-    background-color: #b2a987;
+    background-color: #FECC00;
     transition:  90ms ease-in;
 
     .main{
-        background-color: red;
+        background-color: #FECC00;
         margin: 0 auto;
         max-width: 1300px;
         padding: 0 10px;
 
         .first-line{
-            background-color: grey;
+           
             display: flex;
+            margin-bottom: 10px;
+            justify-content: space-between;
         
 
            
@@ -40,7 +42,8 @@ header{
             img{
                 width: 210px; 
                 width: 61.25;
-                margin-right: 100px;           
+                margin-right: -160px;
+                       
             }
 
             form{
@@ -55,7 +58,8 @@ header{
                 width: 510px;
                 height: 45px;
                 margin-bottom: 5px;
-                margin-right: 100px;
+                
+                
                 position: relative;
 
                 input[type="search"]{
@@ -75,8 +79,8 @@ header{
                     background-color: red;
                     border: none;
                     height: 100%;
-                    width: 36px;
-                    padding: 0 10px;
+                    width: 45px;
+                    
                     margin: 0;
 
                     background-color: white;
@@ -147,9 +151,9 @@ header{
             }   
         }
         .sec-line{
-            background-color: rgba(255, 255, 255, 0.5);
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             nav{
                 padding: 12px 0;
@@ -174,6 +178,104 @@ header{
                     }
                 }
             }
+
+            .test{
+                .my-account{
+                    height: 100%;
+                padding: 0 12px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 190px;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: white;
+                background-color: #1CA2EB ;
+                border: none;
+                font-family:'montserrat';
+                i{
+                    font-size: 2rem;
+                    color: white;
+                }
+            }
+
+            .my-account-hover{
+                display: none;
+                border: 0.1px solid rgb(198, 198, 198);
+                position: absolute;
+                top: 50px;
+                right: 0;
+                z-index: 1; 
+                background: rgb(255, 255, 255);
+                padding: 30px;
+
+                i{
+                    color: white;
+                    font-size: 4.2rem;
+                    position: absolute;
+                    right: 15px;
+                    top: -20px;
+                }
+               
+                button{
+                    background-color: rgb(152, 89, 89);
+                    font-size: 1.4rem;
+                    display: block;
+                    padding: 15px 20px;
+                    width: 220px;
+                    height: 50px;
+                   text-align: center;
+                   border: none;
+                   font-family:'montserrat';
+                   font-weight: 600;
+                   text-transform: uppercase;
+                }
+
+               
+            }
+             button:nth-child(2){
+                    margin-bottom: 20px; 
+                    border: 1px solid #1CA2EB;
+                    background-color: white;
+                    color: #1CA2EB;
+                }
+
+                button:nth-child(3){
+                    color: white;
+                    background-color: #1CA2EB;
+                   
+                }
+            }
+            
+
+            .test:hover .my-account-hover{
+                display: block;
+            }
+
+
+            
         }
+        
     }
+    .third-line{
+            background-color:rgb(255, 255, 255) ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+
+            p{
+                font-size: 1.4rem;
+                font-weight: 700;
+                font-family: "montserrat";
+                margin-right: 90px;
+            }
+        }
+}
+
+main{
+    padding-top: 150px;
+    background-color: #f2f2f2;
+    height: 100%;
 }
