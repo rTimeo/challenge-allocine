@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/javascript/script.js" defer></script>
+    <script src="assets/javascript/caroussel.js" defer></script>
 
 
     <title>Allociné</title>
@@ -80,25 +81,35 @@
 
     </header>
 
-   <main>
-       <div class="container-caroussel">
-            <div>
-                <a href="#">
-                    <img src="assets/images/carousel/anniston.webp" alt="">
-                </a>
+    <main>
+        <div class="container">
+            <div class="slides">
+                <div class="slide">
+                    <a href="#">
+                        <img src="assets/images/carousel/anniston.webp" alt="">
+                    </a>
+                </div>
+                <div class="slide">  
+                    <a href="#">
+                        <img src="assets/images/carousel/fastandfuriousimg.webp" alt="">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.allocine.fr/">
+                        <img src="assets/images/carousel/aquaman.jpeg" alt="">
+                    </a>
+                </div>
             </div>
-            <div>  
-                <a href="#">
-                    <img src="assets/images/carousel/fastandfuriousimg.webp" alt="">
-                </a>
+            <div class="slide-controls">
+                <button id="prev-btn">
+                    <i class="fa-solid fa-chevron-right fa-rotate-180"></i>
+                </button>
+                <button id="next-btn">
+                    <i class="fa-solid fa-chevron-right"></i>   
+                </button>
             </div>
-            <div>
-                <a href="#">
-                    <img src="assets/images/carousel/aquaman.jpeg" alt="">
-                </a>
-            </div>
-       </div>
-   </main>
+        </div>
+    </main>
 
 
 </body>

@@ -18,6 +18,7 @@ header {
   transform: translateY(0);
   background-color: #FECC00;
   transition: 90ms ease-in;
+  z-index: 9;
 }
 header .main {
   background-color: #FECC00;
@@ -214,9 +215,52 @@ header .third-line p {
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 162px;
   background-color: #f2f2f2;
   height: 100%;
+}
+main .container {
+  margin: 0 auto;
+  max-width: 1300px;
+  z-index: 8;
+  position: relative;
+  overflow: hidden;
+}
+main .container .slides {
+  display: flex;
+  height: 100%;
+}
+main .container .slides .slide {
+  min-width: 100%;
+}
+main .container .slides .slide a img {
+  width: 100%;
+}
+main .container .slide-controls #next-btn,
+main .container .slide-controls #prev-btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .container .slide-controls #next-btn i,
+main .container .slide-controls #prev-btn i {
+  font-size: 5rem;
+}
+main .container .slide-controls #next-btn i:hover,
+main .container .slide-controls #prev-btn i:hover {
+  color: #FECC00;
+}
+main .container .slide-controls #next-btn {
+  right: 0;
+}
+main .container .slide-controls #next-btn:focus,
+main .container .slide-controls #prev-btn:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

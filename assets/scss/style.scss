@@ -20,10 +20,10 @@ header{
     right: 0;
     left: 0;   
     transform: translateY(0);
-  
+    
     background-color: #FECC00;
     transition:  90ms ease-in;
-
+    z-index: 9;
     .main{
         background-color: #FECC00;
         margin: 0 auto;
@@ -275,7 +275,69 @@ header{
 }
 
 main{
-    padding-top: 150px;
+    padding-top: 162px;
     background-color: #f2f2f2;
     height: 100%;
+    
+   
+    .container{
+        margin: 0 auto;
+        max-width: 1300px; 
+         z-index: 8;
+        position: relative;
+        overflow: hidden;
+
+        .slides{
+            display: flex;
+            height: 100%;
+
+            .slide{
+                min-width: 100%;
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .slide-controls{
+            
+        
+            #next-btn, 
+            #prev-btn{
+                cursor: pointer;
+                background: transparent;
+                
+                border: none;
+                padding: 10px;
+                color: white;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                i{
+                    font-size: 5rem;
+                }
+
+                i:hover{
+                    color: #FECC00;
+                }
+
+
+            }
+
+            #next-btn{
+                right: 0;
+
+            }
+
+            #next-btn:focus, 
+            #prev-btn:focus{
+                outline: none;
+            }
+        }
+    }
 }
+
+
