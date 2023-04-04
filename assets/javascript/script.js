@@ -4,7 +4,7 @@ let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos  || currentScrollPos < 200) {
     document.getElementById("header").style.top = "0";
   } else {
-    document.getElementById("header").style.top = "-82px";
+    document.getElementById("header").style.top = "-70px";
   }
   prevScrollpos = currentScrollPos;
 }

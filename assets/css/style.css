@@ -23,18 +23,16 @@ header {
 header .main {
   background-color: #FECC00;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1024px;
   padding: 0 10px;
 }
 header .main .first-line {
   display: flex;
   margin-bottom: 10px;
-  justify-content: space-between;
 }
 header .main .first-line img {
-  width: 210px;
-  width: 61.25;
-  margin-right: -160px;
+  width: 162px;
+  margin-right: 90px;
 }
 header .main .first-line form {
   margin-top: 15px;
@@ -42,8 +40,8 @@ header .main .first-line form {
   background-color: white;
   border: 1px solid rgb(255, 255, 255);
   overflow: hidden;
-  width: 510px;
-  height: 45px;
+  width: 400px;
+  height: 36px;
   margin-bottom: 5px;
   position: relative;
 }
@@ -52,7 +50,7 @@ header .main .first-line form input[type=search] {
   width: 362px;
   height: 100%;
   padding: 0 14px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   outline: none;
 }
 header .main .first-line form input::placeholder {
@@ -62,14 +60,14 @@ header .main .first-line form button {
   background-color: red;
   border: none;
   height: 100%;
-  width: 45px;
+  width: 36px;
   margin: 0;
   background-color: white;
   position: absolute;
   right: 0;
 }
 header .main .first-line form button i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 header .main .first-line form button:hover {
   background-color: #ececec;
@@ -96,44 +94,24 @@ header .main .first-line .list ul a {
 header .main .first-line .list ul a:hover {
   color: #333;
 }
-header .main .first-line .btn-rate {
-  width: 165px;
-  height: 30px;
-  align-self: center;
-  border: none;
-  background-color: black;
-  padding: 0 10px;
-}
-header .main .first-line .btn-rate i {
-  font-size: 14px;
-  color: white;
-  margin-right: 5px;
-}
-header .main .first-line .btn-rate span {
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fdfffa;
-  font-family: "montserrat";
-}
 header .main .sec-line {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 header .main .sec-line nav {
-  padding: 12px 0;
+  padding: 10px 0;
 }
 header .main .sec-line nav ul {
   display: flex;
 }
 header .main .sec-line nav ul a {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   color: #333;
   font-family: "montserrat", Arial, Sans-Serif;
   font-weight: 600;
-  padding: 12px 20px;
+  padding: 10px 15px;
 }
 header .main .sec-line nav ul a:hover {
   background: hsla(0, 0%, 100%, 0.4);
@@ -144,17 +122,17 @@ header .main .sec-line .test .my-account {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 190px;
+  width: 150px;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: white;
   background-color: #1CA2EB;
   border: none;
-  font-family: "montserrat";
+  font-family: "montserrat", Arial, Sans-Serif;
 }
 header .main .sec-line .test .my-account i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 header .main .sec-line .test .my-account-hover {
@@ -203,25 +181,26 @@ header .main .sec-line .test:hover .my-account-hover {
 header .third-line {
   background-color: rgb(255, 255, 255);
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 30px;
+  align-items: center;
+  height: 25px;
+  width: 100%;
 }
 header .third-line p {
-  font-size: 1.4rem;
+  margin-left: -70px;
+  font-size: 1.1rem;
   font-weight: 700;
   font-family: "montserrat";
-  margin-right: 90px;
 }
 
 main {
-  padding-top: 162px;
+  padding-top: 140px;
   background-color: #f2f2f2;
   height: 100%;
 }
 main .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1024px;
   z-index: 8;
   position: relative;
   overflow: hidden;
@@ -261,6 +240,22 @@ main .container .slide-controls #next-btn {
 main .container .slide-controls #next-btn:focus,
 main .container .slide-controls #prev-btn:focus {
   outline: none;
+}
+main .container .counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px;
+}
+main .container .counter span {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "montserrat", Arial, Sans-Serif;
+  font-weight: 600;
+}
+main .container .counter span:nth-child(2) {
+  margin: 0 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
